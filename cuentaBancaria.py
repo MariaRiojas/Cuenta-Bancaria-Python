@@ -32,10 +32,10 @@ class cuentaBancaria:
             account.mostrar_info_cuenta()
 
 
-savings = cuentaBancaria(.05,1000)
-checking = cuentaBancaria(.02,5000)
+diony = cuentaBancaria(.05,1000)
+malory = cuentaBancaria(.02,5000)
 
-savings.deposito(1000).deposito(200).deposito(40).retiro(800).generar_interés().mostrar_info_cuenta()
-checking.deposito(3000).deposito(1200).retiro(40).retiro(30).retiro(20).retiro(10).generar_interés().mostrar_info_cuenta()
+diony.deposito(1000).deposito(200).deposito(40).retiro(800).generar_interés().mostrar_info_cuenta()
+malory.deposito(3000).deposito(1200).retiro(40).retiro(30).retiro(20).retiro(10).generar_interés().mostrar_info_cuenta()
 
 cuentaBancaria.imprime_todas_cuentas()
