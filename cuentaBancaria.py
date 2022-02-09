@@ -13,7 +13,7 @@ class cuentaBancaria:
         if(self.balance - amount) >= 0:
             self.balance -= amount
         else:
-            print("Insufficient Funds: Charging a $5 fee")
+            print("Fondos insuficientes: Cargar $5 fee")
             self.balance -= 5
         return self
     
@@ -36,6 +36,6 @@ savings = cuentaBancaria(.05,1000)
 checking = cuentaBancaria(.02,5000)
 
 savings.deposito(1000).deposito(200).deposito(40).retiro(800).generar_interés().mostrar_info_cuenta()
-checking.deposito(3000).deposito(1200).deposito(40).retiro(600).generar_interés().mostrar_info_cuenta()
+checking.deposito(3000).deposito(1200).retiro(40).retiro(30).retiro(20).retiro(10).generar_interés().mostrar_info_cuenta()
 
 cuentaBancaria.imprime_todas_cuentas()
